@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+</head>
+<body>
+
+  <a-scene>
+
+    <a-box position="0 2 -5" width="10" height="4" depth="0.1" color="white"></a-box>
+    <a-box position="0 2 5" width="10" height="4" depth="0.1" color="white"></a-box>
+    <a-box position="5 2 0" width="0.1" height="4" depth="10" color="white"></a-box>
+    <a-box position="-5 2 0" width="0.1" height="4" depth="10" color="white"></a-box>
+
+   
+    <a-plane position="0 2 4.9" rotation="0 180 0" width="4" height="2" color="grey" material="src: path/to/poster-image.jpg"></a-plane>
+
+    
+
+    
+    <a-entity position="0 2 0">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <a-sky color="#ECECEC"></a-sky>
+  </a-scene>
+
+</body>
+</html>

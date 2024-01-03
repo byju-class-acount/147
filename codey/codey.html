@@ -7,17 +7,22 @@
 
   <a-scene>
 
-    <a-box position="0 2 -5" width="10" height="4" depth="0.1" color="white"></a-box>
-    <a-box position="0 2 5" width="10" height="4" depth="0.1" color="white"></a-box>
-    <a-box position="5 2 0" width="0.1" height="4" depth="10" color="white"></a-box>
-    <a-box position="-5 2 0" width="0.1" height="4" depth="10" color="white"></a-box>
+    <!-- Floor -->
+    <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#A9A9A9" material="side: double" src = "https://as2.ftcdn.net/v2/jpg/01/15/97/83/1000_F_115978338_sGtNJeTKw7FTkiQV2brU6n0PLK1yTX7B.jpg"></a-plane>
 
-   
-    <a-plane position="0 2 4.9" rotation="0 180 0" width="4" height="2" color="grey" material="src: path/to/poster-image.jpg"></a-plane>
+    <!-- Walls -->
+    <a-box position="0 2 -5" width="10" height="4" depth="0.1" color="white" src="https://www.thespruce.com/thmb/2PuuiKjCRMeisRVimFRRmJ19t-8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/thespruce-slapbrushwalltexture-Nenov-609487fb3a2642f2951c96d03a2f02d1.jpg"></a-box>
+    <a-box position="0 2 5" width="10" height="4" depth="0.1" color="white" src="https://www.thespruce.com/thmb/2PuuiKjCRMeisRVimFRRmJ19t-8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/thespruce-slapbrushwalltexture-Nenov-609487fb3a2642f2951c96d03a2f02d1.jpg"></a-box>
+    <a-box position="5 2 0" width="0.1" height="4" depth="10" color="white" src="https://www.thespruce.com/thmb/2PuuiKjCRMeisRVimFRRmJ19t-8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/thespruce-slapbrushwalltexture-Nenov-609487fb3a2642f2951c96d03a2f02d1.jpg"></a-box>
+    <a-box position="-5 2 0" width="0.1" height="4" depth="10" color="white" src="https://www.thespruce.com/thmb/2PuuiKjCRMeisRVimFRRmJ19t-8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/thespruce-slapbrushwalltexture-Nenov-609487fb3a2642f2951c96d03a2f02d1.jpg"></a-box>
 
-    
+    <!-- Roof -->
+    <a-plane position="0 4 0" rotation="-90 0 0" width="10" height="10" color="gray"></a-plane>
 
-    
+    <!-- Poster on the wall -->
+    <a-plane position="0 2 4.9" rotation="0 180 0" width="4" height="2" color="grey" src = ""></a-plane>
+
+    <!-- Camera and controls -->
     <a-entity position="0 2 0">
       <a-camera></a-camera>
     </a-entity>
